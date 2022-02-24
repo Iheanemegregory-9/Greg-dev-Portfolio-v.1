@@ -256,7 +256,7 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
 .hero-content div.hero-btns a:nth-child(2){
     text-align: center;
     font-size: 15px;
-    background-color: #006eff;
+    background-color: #0084ff;
     padding: 10px;
     width: 80px;
     text-decoration: none;
@@ -397,6 +397,7 @@ background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, F
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    color: whitesmoke;
 }
 
 

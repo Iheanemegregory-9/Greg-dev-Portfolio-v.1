@@ -306,11 +306,7 @@ transform: scaleX(1.1);
     z-index: 1;
     top: 0;
     left: 0;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+    background:#f0eeee;
     overflow-x: hidden;
     padding-top: 50px;
     display: flex;
@@ -342,7 +338,7 @@ transform: scaleX(1.1);
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    color: #fff;
+    color: #006eff;
     transition: all 1s ease-out;
     /* animation: slide-out 1s ease-in-out .5s 1 ; */
 }

@@ -385,14 +385,9 @@ background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, F
     /* padding-top:50px;
     padding-left: 30px;
     animation: flow 20s ease  infinite; */
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    
 }
 
-.services-container{
+#services .services-container{
     display: flex;
     flex-wrap: wrap;
     align-content: center;

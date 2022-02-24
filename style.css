@@ -387,13 +387,9 @@ background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, F
     animation: flow 20s ease  infinite; */
 }
 
-#services .services-container{
+.service-area .services-container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    color: whitesmoke;
+    color: red;
 }
 
 

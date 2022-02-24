@@ -388,25 +388,11 @@ background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, F
     
 }
 
-#services .container-box{
+.services-container{
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    /* margin: 40px 0; */
-}
-
-
- .container-box .card{
-    position: relative;
-    min-width: 320px;
-    height: 440px;
-    box-shadow: 
-    inset 5px 5px 5px rgba(0,0,0,0.2)
-    inset -5px -5px 15px rgba(225,225,225,0.1)
-    ;
-
 }
 
 

@@ -9,7 +9,7 @@ html{
 
 body{
     font-family: 'Lato';
-    background-color: #010103;
+    background-color: #17171F;
 }
 
 
@@ -230,21 +230,23 @@ body{
 .hero-content div.hero-btns a:nth-child(1){
     text-align: center;
     font-size: 15px;
-    background-color: #ffe600;
+    background: #ED213A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px;
     width: 80px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     border-radius: 2.5px;  
     transition:  all   .3s;
-    animation: show-btn 1s ease-in-out 3s 1;
+    animation: show-btn 1.5s ease-in-out 3s 1;
 }
 
 
 .hero-content div.hero-btns a:nth-child(1):hover{
     background: #ED213A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     /* width: 90px; */
     transform: scaleX(1.1);
@@ -256,21 +258,23 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
 .hero-content div.hero-btns a:nth-child(2){
     text-align: center;
     font-size: 15px;
-    background-color: #0084ff;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px;
     width: 80px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     border-radius: 2.5px;  
     transition:  all .3s;
-    animation: show-btn 1s ease-in-out 3s 1;
+    animation: show-btn 1.5s ease-in-out 3s 1;
 }
 
 .hero-content div.hero-btns a:nth-child(2):hover{
     background: #8E2DE2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-transform: scaleX(1.1);
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transform: scaleX(1.1);
     box-shadow: 0px 2px 0px #0a2a53;
     color: white;
 }
@@ -295,9 +299,9 @@ transform: scaleX(1.1);
         transform: scale(1.2);
     }
 
-    100%{
+    /* 100%{
         transform: scale(0);
-    }
+    } */
 }
 
 .side-navbar{
@@ -307,7 +311,7 @@ transform: scaleX(1.1);
     z-index: 1;
     top: 0;
     left: 0;
-    background:#f0eeee;
+    background:#17171F;
     overflow-x: hidden;
     padding-top: 50px;
     display: flex;
@@ -339,7 +343,7 @@ transform: scaleX(1.1);
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    color: #006eff;
+    color: #565666;
     transition: all 1s ease-out;
     /* animation: slide-out 1s ease-in-out .5s 1 ; */
 }
@@ -375,23 +379,202 @@ transform: scaleX(1.1);
 
 #about{
     background: #000428;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
 #services{
-   background: #222222;
+   background: #17171F;
     /* padding-top:50px;
     padding-left: 30px;
     animation: flow 20s ease  infinite; */
 }
 
-.service-area .services-container{
+.service-area{
     display: flex;
-    color: red;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+.service-area .services-card{
+    position: relative;
+    width: 300px;
+    height: 440px;
+    box-shadow: 
+    inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    /* margin: -1px; */
+}
+
+
+
+.service-area .services-card::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.service-area .services-card .service-box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: transparent;
+    border: 2px solid #2a2b2f;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+.service-area .services-card .service-box::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.service-area .services-card .service-box:hover{
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+    transform: translateY(-50px);
+}
+
+
+
+.service-area .services-card .service-box .service-content{
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.service-area .services-card .service-box .service-content h2{
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.199);
+}
+
+
+
+.service-area .services-card .service-box .service-content h1{
+    font-size: 35px;
+    color: #ffe600;
+    z-index: 1;
+    transition: 1s;
+}
+
+
+
+.service-area .services-card .service-box .service-content p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffe600;
+    z-index: 1;
+    transition: 1s;
+}
+
+
+/* ecom service card special styling */
+.service-area .services-card-special{
+    position: relative;
+    width: 350px;
+    height: 540px;
+    box-shadow: 
+    inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    /* margin: 30px; */
+}
+.service-area .services-card-special::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.service-area .services-card-special .service-box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: transparent;
+    border: 2px solid #2a2b2f;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transition: all 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.service-area .services-card-special .service-box:hover{
+    background-color: #ffee00;
+}
+.service-area .services-card-special .service-box::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.service-area .services-card-special .service-box:hover{
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+    transform: translateY(-50px);
+}
+.service-area .services-card-special .service-box .service-content{
+    padding: 20px;
+    text-align: center;
+}
+.service-area .services-card-special .service-box .service-content h2{
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.199);
+}
+.service-area .services-card-special .service-box .service-content h1{
+    font-size: 35px;
+    color: #006eff;
+    z-index: 1;
+    transition: 1s;
+}
+.service-area .services-card-special .service-box .service-content p{
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    z-index: 1;
+    transition: 1s;
+}
 
 
 
